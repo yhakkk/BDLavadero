@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Estilos/style.css">
+    <link rel="stylesheet" href="../../Estilos/admin.css">
+    <link rel="stylesheet" href="../../Estilos/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark bg-gradient">
+    <div class="container-fluid ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-dark bg-gradient " id="navbarTogglerDemo01">
+        <a class="navbar-brand text-white" href="../Admin/admin.html">Lavadero La Madrid</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="../Usuario/cliente.html">Cliente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Vehiculo/vehiculo.html">Vehiculos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Servicio/servicio.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Estadisticas/estadisticas.html">Estadisticas</a>
+                </li>
+              </ul>
+        <form class="d-flex flex-row" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success d-flex" style="align-items: center;" type="submit"><img class="busqueda-imagen" src="../../img/search-interface-symbol.png" alt="busqueda"></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-5" id="inicio">
+    <h1>Lavadero La Madrid</h1>
+    <h3>Admin Page</h3>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <header class="card-header">
+          <h4 class="card-title mt-2">Registro Usuario</h4>
+        </header>
+        <article class="card-body">
+          <form id="registroForm" >
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="">
+              <p class="errorForm" id="errorNombre">Informacion Invalida</p>
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" name="apellido" placeholder="">
+              <p class="errorForm" id="errorApellido">Informacion Invalida</p>
+            </div>
+            <div class="mb-3">
+              <label for="numero" class="form-label">Número</label>
+              <input type="number" class="form-control" id="numero" name="telefono" placeholder="">
+              <p class="errorForm"  id="errorNumero">Informacion Invalida</p>
+            </div>
+            <div class="mb-3">
+              <label for="numero" class="form-label">Dni</label>
+              <input type="number" class="form-control" id="dni" name="dni" placeholder="">
+              <p class="errorForm" id="errorDNI">Informacion Invalida</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" style="margin-top: 10px;" onclick="enviarFormulario()"> Registrar</button>
+
+          </form>
+          
+        </article>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./configUsuario.js"></script>
+</body>
+</html>

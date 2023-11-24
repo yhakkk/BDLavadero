@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Administrador</title>
+    <link rel="stylesheet" href="../../Estilos/style.css">
+    <link rel="stylesheet" href="../../Estilos/admin.css">
+    <link rel="stylesheet" href="../../Estilos/cliente.css">
+    <link rel="stylesheet" href="../../Estilos/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark bg-gradient">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark bg-gradient " id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white" href="../Admin/admin.html">Lavadero La Madrid</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="../Usuario/cliente.html">Cliente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Vehiculo/vehiculo.html">Vehiculos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Servicio/servicio.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Estadisticas/estadisticas.html">Estadisticas</a>
+                </li>
+              </ul>
+            <form class="d-flex flex-row" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success d-flex" style="align-items: center;" type="submit">
+                    <img class="busqueda-imagen" src="../../img/search-interface-symbol.png" alt="busqueda">
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="container text-center mt-5" id="inicio">
+        <h1>Lavadero La Madrid</h1>
+        <h3>Admin Page</h3>
+        <a href="./registrarVehiculo.html" class="btn btn-outline-success mt-3">
+            <span style="text-decoration: none; color: black;">Registrar Vehiculo</span>
+        </a>
+        <h3><b>Vehiculos Registrados</b></h3>
+
+
+
+        <a href="./vehiculosInactivos.html" class="btn btn-outline-success mt-3">
+            <span style="text-decoration: none; color: black;">Vehiculos Desactivados</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="mb-2 d-flex">
+                    <form class="d-flex col-md-3">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                      <button class="btn btn-outline-success">
+                          <img class="busqueda-imagen" src="../../img/search-interface-symbol.png" alt="busqueda">
+                      </button>
+                </div>
+                <table id="tabla-servicios" class="table">
+                        <tr>
+                            <th>Patente</th>
+                            <th>Dueño</th>
+                            <th>Modelo</th>
+                            <th>Marca</th>
+                            <th>Tipo</th>
+                        </tr>
+                </table>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Editar Vehículo</h2>
+            <p>Dueño (ingresar DNI)</p>
+            <input type="text" id="DueñoUpdate" >
+            <div class="padre">
+                <div id="dueños" class="dueños"></div>
+            </div>
+            <p class="errorForm" id="errorDueño">Información Inválida</p>
+            <p>Marca</p>
+            <input type="text" id="MarcaUpdate" >
+            <div class="padre">
+                <div id="dueñosMarca" class="dueños"></div>
+            </div>
+            <p class="errorForm" id="errorMarca">Información Inválida</p>
+            <p>Modelo</p>
+            <input type="text" id="ModeloUpdate" >
+            <div class="padre">
+                <div id="dueñosModelo" class="dueños"></div>
+            </div>
+            <p class="errorForm" id="errorModelo">Información Inválida</p>
+            <p>Patente</p>
+            <input type="text" id="PatenteUpdate">
+            <p class="errorForm" id="errorPatente">Información Inválida</p>
+            <p>Tipo</p>
+            
+            <select name="" id="tipoVehiculo">
+                <option class="form-control" value="" id="seleccionado">Seleccionar Tipo</option>
+                <p id="errorTipo" class="errorForm">Este campo es obligatorio.</p>
+            </select>
+            <button onclick="actualizarVehiculo()">Guardar</button>
+        </div>
+    </div>
+    
+      
+    
+    <script src="configVehiculo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

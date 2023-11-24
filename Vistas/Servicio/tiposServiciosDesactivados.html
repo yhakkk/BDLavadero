@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Administrador</title>
+    <link rel="stylesheet" href="../../Estilos/style.css">
+    <link rel="stylesheet" href="../../Estilos/admin.css">
+    <link rel="stylesheet" href="../../Estilos/error.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Estilos/servicioEstilo.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark bg-gradient">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark bg-gradient " id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white" href="../Admin/admin.html">Lavadero La Madrid</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="../Usuario/cliente.html">Cliente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Vehiculo/vehiculo.html">Vehiculos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Servicio/servicio.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../Estadisticas/estadisticas.html">Estadisticas</a>
+                </li>
+              </ul>
+
+            <form class="d-flex flex-row" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success d-flex" style="align-items: center;" type="submit">
+                    <img class="busqueda-imagen" src="../../img/search-interface-symbol.png" alt="busqueda">
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="container text-center mt-5" id="inicio">
+        <h1>Lavadero La Madrid</h1>
+        <h3>Admin Page</h3>
+        <a href="./tiposServicios.html" class="btn btn-outline-success mt-3">Tipos Servicios</a>
+       <div class="">
+            <h3><b>Registrar Tipo de Servicio</b></h3>
+       </div>
+
+       
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="mb-2 d-flex">
+                    <form class="d-flex col-md-3">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                      <button class="btn btn-outline-success">
+                          <img class="busqueda-imagen" src="../../img/search-interface-symbol.png" alt="busqueda">
+                      </button>
+                </div>
+                
+                <table id="tabla-tiposervicios" class="table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                        </tr>
+                        
+                </table>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <script src="./tipoServiciosDesactivados.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

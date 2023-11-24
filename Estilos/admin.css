@@ -1,0 +1,33 @@
+body{
+  background-color: #f0f0f0 !important;
+}
+
+.conteiner-inicio{
+    margin-top: 100px;
+    margin-left: 400px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  width: 500px;
+
+}
+
+.conteiner-inicio h1{
+  font-size: 70px;
+  font-weight: bold;
+
+}
+
+.conteiner-inicio img{
+  margin-bottom: 20px;
+
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+

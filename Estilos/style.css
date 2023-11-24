@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&family=Rowdies&display=swap');
+
+*{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.carousel{
+    width: 70%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.conteiner-inicio{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-turnos {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+
+  
+
+.tabla1{
+    margin-top: 1em;
+  }
+  
+  .tabla1 th, .tabla1 td{
+    text-align: center;
+    padding: .2em .5em;
+  }
+  
+  .tabla1 caption{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: .5em;
+  }
+  
+  .tabla1 tr{
+    border-bottom: 1px solid black;
+  }
+  
+  .tabla2{
+    margin-top: 2em;
+  }
+  
+  .tabla2 th, .tabla2 td{
+    text-align: center;
+    padding: .2em .5em;
+    border: 1px solid black;
+  }
+  
+  .tabla2 caption{
+    text-align: left;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .tabla2 td{
+    text-align: left;
+    font-size: .8em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+  }
+  
+  .tabla2 td:hover{
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 0;
+  }
+
+  .container-precios {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  td:last-child {
+    font-weight: bold;
+    text-align: right;
+  }
+  .mapa-lavadero {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .mapa-lavadero h2 {
+    margin-top: 0;
+  }
+  
+  .mapa-lavadero iframe {
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .mapa-lavadero small {
+    display: block;
+    margin-top: 10px;
+  }
+    
+.busqueda-imagen{
+  width: 15px;
+  
+}
+
+.dueños{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 100 !important;
+}
+
+.dueños > div{
+  width: 100%;
+  user-select: none;
+  cursor: pointer !important;
+  background-color: rgb(232, 175, 175);
+  padding: 5px;
+}
+
+.padre{
+  position: relative;
+  width: 100%;
+
+}
+
+.expandable-input {
+  min-height: 40px ; /* Puedes ajustar esta altura mínima según tus necesidades */
+  resize: vertical ; /* Permite la redimensión vertical */
+  overflow: hidden; /* Oculta el desbordamiento si se llena */
+}
+
+
+.inputDescripcion {
+  resize: vertical; /* Permite que el usuario redimensione verticalmente el textarea si es necesario */
+  /* Otros estilos si son necesarios */
+}
+
+.BTNEditar{
+  margin-top: 5px;
+}
+
